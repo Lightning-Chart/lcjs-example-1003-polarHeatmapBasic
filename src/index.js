@@ -10,7 +10,7 @@ const resolutionSectors = 360
 const resolutionAnnuli = 100
 
 const polarChart = lightningChart().Polar({
-    theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
+    theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
 })
 const polarHeatmap = polarChart
     .addHeatmapSeries({

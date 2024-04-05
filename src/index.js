@@ -9,7 +9,9 @@ const { createWaterDropDataGenerator } = xydata
 const resolutionSectors = 360
 const resolutionAnnuli = 100
 
-const polarChart = lightningChart().Polar({
+const polarChart = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        }).Polar({
     theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
 })
 const polarHeatmap = polarChart

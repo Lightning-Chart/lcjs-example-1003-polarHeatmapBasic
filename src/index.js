@@ -42,9 +42,4 @@ createWaterDropDataGenerator()
             }),
         })
         polarHeatmap.setFillStyle(palette).invalidateIntensityValues(data)
-
-        const legend = polarChart.addLegendBox().add(polarChart).setAutoDispose({
-            type: 'max-width',
-            maxWidth: 0.3,
-        })
     })
